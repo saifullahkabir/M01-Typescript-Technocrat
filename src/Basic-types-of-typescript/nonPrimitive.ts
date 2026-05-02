@@ -14,3 +14,32 @@ let couple: [string, string] = ["Husband", "Wife"];
 let RanaNameAndRoll: [string, number] = ["Rana", 100];
 
 let destination: [string, string, number] = ["Chattogram", "Dhaka", 7];
+
+//* reference type : object
+//* literal type
+const user: {
+  organization: "Programmin Hero"; // value => type (literal type)
+  firstName: string;
+  middleName?: string; // optional type
+  lastName: string;
+  isMarried: boolean;
+} = {
+  organization: "Programmin Hero",
+  firstName: "Saifullah",
+  lastName: "Rana",
+  isMarried: false,
+};
+
+//* access modifier
+const user2: {
+  readonly organization: string; // access modifier
+  firstName: string;
+  middleName?: string; // optional type
+  lastName: string;
+  isMarried: boolean;
+} = {
+  organization: "Programmin Hero",
+  firstName: "Saifullah",
+  lastName: "Rana",
+  isMarried: false,
+};
