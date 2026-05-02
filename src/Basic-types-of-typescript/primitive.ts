@@ -1,7 +1,7 @@
 //* JS - TS
 //* string, number, boolean, undefined, null
 
-//* TS : nevel, unknown, void
+//* TS : never, unknown, void
 
 let userName: string = "rana123";
 
