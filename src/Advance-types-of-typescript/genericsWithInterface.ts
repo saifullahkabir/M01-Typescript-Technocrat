@@ -1,4 +1,4 @@
-interface Developer<T> {
+interface Developer<T, X = null> {
   name: string;
   salary: number;
   device: {
@@ -7,6 +7,7 @@ interface Developer<T> {
     releasedYear: string;
   };
   smartWatch: T;
+  bike?: X;
 }
 
 interface INonBrandWatch {
@@ -36,7 +37,13 @@ const poorDeveloper: Developer<INonBrandWatch> = {
   },
 };
 
-const richDeveloper: Developer<IAppleWatch> = {
+const richDeveloper: Developer<
+  IAppleWatch,
+  {
+    brand: "Yamaha";
+    engineCapacity: "300cc";
+  }
+> = {
   name: "Mr. rich",
   salary: 100000,
   device: {
@@ -52,3 +59,8 @@ const richDeveloper: Developer<IAppleWatch> = {
     aiFeature: true,
   },
 };
+
+// example
+const add = (num1: number, num2: number = 0) => num1 + num2;
+
+add(2);
