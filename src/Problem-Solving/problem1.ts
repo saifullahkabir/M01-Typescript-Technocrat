@@ -7,16 +7,8 @@
 //* Sample Output:
 //* [2, 4, 6]
 
-const filterEvenNumbers = (arrayOfNum: number[]): number[] => {
-  const newArray: number[] = [];
-
-  arrayOfNum.map((number) => {
-    if (number % 2 === 0) {
-      return newArray.push(number);
-    }
-  });
-
-  return newArray;
+const filterEvenNumbers = (numbers: number[]): number[] => {
+  return numbers.filter((number) => number % 2 === 0);
 };
 
 console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
