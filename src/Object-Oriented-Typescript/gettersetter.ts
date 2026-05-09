@@ -18,7 +18,7 @@ class BankAccount {
 
   //* setter
   set addBalance(balance: number) {
-     this.userBalance = this.userBalance + balance;
+    this.userBalance = this.userBalance + balance;
   }
 
   // getBalance() {
@@ -27,18 +27,17 @@ class BankAccount {
 
   //* getter
   get getBalance() {
-    return this.userBalance
+    return this.userBalance;
   }
 }
 
 const ranaAccount = new BankAccount(111, "Rana", 20);
 
-
 // ranaAccount.addBalance(100);
 // ranaAccount.addBalance(100);
 
 //* using setter : dont have to call the funtion
-ranaAccount.addBalance =100;
+ranaAccount.addBalance = 100;
 ranaAccount.addBalance = 100;
 
 console.log(ranaAccount.getBalance);
